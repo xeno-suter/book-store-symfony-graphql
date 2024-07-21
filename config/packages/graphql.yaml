@@ -1,0 +1,14 @@
+overblog_graphql:
+  errors_handler:
+    enabled: true # false will totally disabled errors handling
+    debug: false # will add trace stack and debugMessage to error
+  definitions:
+    mappings:
+      types:
+        - type: attribute
+          dir: "%kernel.project_dir%/src/GraphQL"
+          suffix: ~
+
+    schema:
+      query: RootQuery
+      mutation: RootMutation
